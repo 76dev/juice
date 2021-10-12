@@ -6,7 +6,8 @@
   color: var(--primary-text-color);
 }
 
-h1, .title-text {
+h1,
+.title-text {
   font-family: "Fira Sans", sans-serif;
   font-size: 25px;
   font-weight: 500;
@@ -15,7 +16,8 @@ h1, .title-text {
   padding-left: 10px;
 }
 
-h2, .subtitle-text {
+h2,
+.subtitle-text {
   font-family: "Fira Sans", sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -36,4 +38,16 @@ h2, .subtitle-text {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.1px;
+}
+
+main {
+  .text,
+  .subtext,
+  h2,
+  .subtitle-text,
+  .heading-text,
+  h1,
+  .title-text {
+    color: var(--secondary-text-color);
+  }
 }

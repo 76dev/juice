@@ -119,7 +119,8 @@
         document.querySelectorAll(".toc a").forEach((item) => {
             item.classList.remove("active");
         });
-        document.querySelector(".toc a[href$='" + pathname + "#" + heading + "']").classList.add("active");
+        let active = document.querySelector(".toc a[href$='" + pathname + "#" + heading + "']");
+        if (active) active.classList.add("active");
     }
 
     let currentHeading = "";
